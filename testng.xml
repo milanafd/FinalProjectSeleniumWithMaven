@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/milan/IdeaProjects/FinalProjectSeleniumWithMaven">
+        <classes>
+            <class name="tests.LoginTestNg">
+                <methods>
+                    <include name="l1_loginSuccessFromTopMenu"/>
+                    <include name="l2_loginFailure"/>
+                    <include name="l3_loginFromMyAccountInFooter"/>
+                    <include name="l4_clientEnterCartFromCheckoutBtn"/>
+                    <include name="l5_clientLogoutAndLogin"/>
+                    <include name="l6_clientCanGoToLoginPageFromWishListErrorMessage"/>
+                    <include name="l7_LoginFromFooter"/>
+                    <include name="l8_LoginFromCheckOutPage"/>
+                    <include name="l9_clientTriesToLoginMultipleTimesAndGetABlockingAlert"/>
+                </methods>
+            </class>
+            <class name="tests.ProductTestNg">
+                <methods>
+                    <include name="l1_addAProductToCartFromProductPage"/>
+                    <include name="l2_clientWillNotBeAbleToAddToProductComparisonTableTheSameProductTwice"/>
+                </methods>
+            </class>
+            <class name="tests.RegisterTestNg">
+                <methods>
+                    <include name="l1_registrationSuccessTop"/>
+                    <include name="l2_registrationFromFooter"/>
+                    <include name="l3_clientCanRegisterFromCheckoutProcess"/>
+                    <include name="l4_clientCanGoToRegistrationPageFromWishListErrorMessage"/>
+                    <include name="l5_registrationWithSameEmail"/>
+                </methods>
+            </class>
+            <class name="tests.WishListTestNg">
+                <methods>
+                    <include name="l1_addingAProductToWishListByLoggedOutClientWillResultAnAlert"/>
+                    <include name="l2_loggedInClientWillGetAnAlertConfirmingAddingAnItemToWishList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
